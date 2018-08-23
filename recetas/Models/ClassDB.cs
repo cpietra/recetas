@@ -24,7 +24,7 @@ namespace recetas.Models
         public string Nacionalidad { get; set; }
         public string Parentesco { get; set; }
         public string Vive_calle { get; set; }
-        public int Vive_numero { get; set; }
+        public string Vive_numero { get; set; }
         public string Vive_piso { get; set; }
         public string Vive_depto { get; set; }
         public string Vive_cod_postal { get; set; }
