@@ -1,0 +1,264 @@
+﻿@model recetas.Models.Padron
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Padron</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Plan)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Plan)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Categoria)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Orden)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Orden)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_doc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_doc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Num_doc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Num_doc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ecivil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ecivil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.F_nacimiento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.F_nacimiento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nacionalidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nacionalidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parentesco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parentesco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_calle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_calle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_piso)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_piso)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_depto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_depto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_cod_postal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_cod_postal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_localidad_texto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_localidad_texto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_localidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_localidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_partido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_partido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vive_provincia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vive_provincia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Movil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Movil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.F_ingreso)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.F_ingreso)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Prepaga_anterior)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Prepaga_anterior)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.F_egreso)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.F_egreso)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Prepaga_proxima)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Prepaga_proxima)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Volveria)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Volveria)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo_baja_miembro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Motivo_baja_miembro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo_baja_miembro_agrupado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Motivo_baja_miembro_agrupado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cobrador)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cobrador)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Zona)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Zona)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.F_alta_grupo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.F_alta_grupo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.F_antiguedad1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.F_antiguedad1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Promotor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Promotor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_grupo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_grupo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Presento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Presento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.F_baja)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.F_baja)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo_baja_grupo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Motivo_baja_grupo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo_baja_agrupado_grupo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Motivo_baja_agrupado_grupo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id_Padron">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
