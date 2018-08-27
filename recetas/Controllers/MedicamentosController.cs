@@ -21,7 +21,7 @@ namespace recetas.Controllers
         // GET: Medicamentos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Registros.ToListAsync());
+            return View(await _context.medicamentos.ToListAsync());
         }
 
         // GET: Medicamentos/Details/5
@@ -32,7 +32,7 @@ namespace recetas.Controllers
                 return NotFound();
             }
 
-            var medicamentos = await _context.Registros
+            var medicamentos = await _context.medicamentos
                 .FirstOrDefaultAsync(m => m.Id_medicamento == id);
             if (medicamentos == null)
             {
@@ -72,7 +72,7 @@ namespace recetas.Controllers
                 return NotFound();
             }
 
-            var medicamentos = await _context.Registros.FindAsync(id);
+            var medicamentos = await _context.medicamentos.FindAsync(id);
             if (medicamentos == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace recetas.Controllers
                 return NotFound();
             }
 
-            var medicamentos = await _context.Registros
+            var medicamentos = await _context.medicamentos
                 .FirstOrDefaultAsync(m => m.Id_medicamento == id);
             if (medicamentos == null)
             {
@@ -138,15 +138,15 @@ namespace recetas.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var medicamentos = await _context.Registros.FindAsync(id);
-            _context.Registros.Remove(medicamentos);
+            var medicamentos = await _context.medicamentos.FindAsync(id);
+            _context.medicamentos.Remove(medicamentos);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MedicamentosExists(int id)
         {
-            return _context.Registros.Any(e => e.Id_medicamento == id);
+            return _context.medicamentos.Any(e => e.Id_medicamento == id);
         }
     }
 }

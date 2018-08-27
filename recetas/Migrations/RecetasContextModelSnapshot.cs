@@ -52,7 +52,7 @@ namespace recetas.Migrations
 
                     b.HasKey("Id_medicamento");
 
-                    b.ToTable("Registros");
+                    b.ToTable("medicamentos");
                 });
 
             modelBuilder.Entity("recetas.Models.Padron", b =>
@@ -100,7 +100,7 @@ namespace recetas.Migrations
 
                     b.Property<int>("Orden");
 
-                    b.Property<int?>("PadronId_Padron");
+                    b.Property<bool>("Paciente_Cronico");
 
                     b.Property<string>("Parentesco");
 
@@ -132,7 +132,7 @@ namespace recetas.Migrations
 
                     b.Property<string>("Vive_localidad_texto");
 
-                    b.Property<int>("Vive_numero");
+                    b.Property<string>("Vive_numero");
 
                     b.Property<string>("Vive_partido");
 
@@ -146,16 +146,7 @@ namespace recetas.Migrations
 
                     b.HasKey("Id_Padron");
 
-                    b.HasIndex("PadronId_Padron");
-
-                    b.ToTable("Procesos");
-                });
-
-            modelBuilder.Entity("recetas.Models.Padron", b =>
-                {
-                    b.HasOne("recetas.Models.Padron")
-                        .WithMany("List_Procesos")
-                        .HasForeignKey("PadronId_Padron");
+                    b.ToTable("padron");
                 });
 #pragma warning restore 612, 618
         }

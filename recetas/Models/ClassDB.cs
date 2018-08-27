@@ -52,7 +52,7 @@ namespace recetas.Models
         public DateTime F_baja { get; set; }
         public string Motivo_baja_grupo { get; set; }
         public string Motivo_baja_agrupado_grupo { get; set; }
-        public List<Padron> List_Procesos { get; set; } = new List<Padron>();
+        public Boolean Paciente_Cronico { get; set; }
     }
 
     public class Medicamentos
@@ -80,7 +80,7 @@ namespace recetas.Models
             : base(options)
         { }
 
-        public DbSet<Padron> Procesos { get; set; }
-        public DbSet<Medicamentos> Registros { get; set; }
+        public DbSet<Padron> padron { get; set; }
+        public DbSet<Medicamentos> medicamentos { get; set; }
     }
 }

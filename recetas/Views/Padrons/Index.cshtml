@@ -135,6 +135,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Motivo_baja_agrupado_grupo)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paciente_Cronico)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -263,6 +266,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Motivo_baja_agrupado_grupo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paciente_Cronico)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id_Padron">Edit</a> |

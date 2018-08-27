@@ -54,7 +54,9 @@ namespace recetas.Controllers
             // process uploaded files
             // Don't rely on or trust the FileName property without validation.
             path_file = filePath;
-            return Ok(new { count = files.Count, size, filePath });
+            ImportarPadron ClsPadron = new ImportarPadron();
+            int importados = ClsPadron.Import_Padron(path_file);
+            return Ok(new { count = importados});
         }        
     }
 }
